@@ -1,16 +1,16 @@
 {
-  "name": "gulp-coffee",
-  "description": "Compile CoffeeScript files",
+  "name": "gulp-coffee-void",
+  "description": "Compile CoffeeScriptVoid files",
   "version": "2.3.1",
-  "homepage": "http://github.com/wearefractal/gulp-coffee",
-  "repository": "git://github.com/wearefractal/gulp-coffee.git",
-  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "homepage": "http://github.com/vonagam/gulp-coffee",
+  "repository": "git://github.com/vonagam/gulp-coffee.git",
+  "author": "Dmitry Maganov <vonagam@gmail.com>",
   "main": "./index.js",
   "keywords": [
     "gulpplugin"
   ],
   "dependencies": {
-    "coffee-script": "^1.9.0",
+    "coffee-script-void": "^1.9.0",
     "gulp-util": "^3.0.2",
     "merge": "^1.2.0",
     "through2": "^0.6.3",
