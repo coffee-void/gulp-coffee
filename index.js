@@ -1,5 +1,5 @@
 var through = require('through2');
-var coffee = require('coffee-script-void');
+var coffee = require('coffee-react-void');
 var gutil = require('gulp-util');
 var applySourceMap = require('vinyl-sourcemaps-apply');
 var path = require('path');
@@ -15,7 +15,7 @@ module.exports = function (opt) {
 
   function transform(file, enc, cb) {
     if (file.isNull()) return cb(null, file);
-    if (file.isStream()) return cb(new PluginError('gulp-coffee-void', 'Streaming not supported'));
+    if (file.isStream()) return cb(new PluginError('gulp-coffee-react-void', 'Streaming not supported'));
 
     var data;
     var str = file.contents.toString('utf8');
@@ -35,7 +35,7 @@ module.exports = function (opt) {
     try {
       data = coffee.compile(str, options);
     } catch (err) {
-      return cb(new PluginError('gulp-coffee-void', err));
+      return cb(new PluginError('gulp-coffee-react-void', err));
     }
 
     if (data && data.v3SourceMap && file.sourceMap) {
