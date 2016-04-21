@@ -1,7 +1,7 @@
 {
   "name": "gulp-coffee-react-void",
   "description": "Compile CoffeeScriptVoid files",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "homepage": "http://github.com/coffee-void/gulp-coffee",
   "repository": "git://github.com/coffee-void/gulp-coffee.git",
   "author": "Dmitry Maganov <vonagam@gmail.com>",
@@ -10,7 +10,7 @@
     "gulpplugin"
   ],
   "dependencies": {
-    "coffee-react-void": "^4.0.0",
+    "coffee-react-void": "^5.0.0",
     "gulp-util": "^3.0.2",
     "merge": "^1.2.0",
     "through2": "^0.6.3",
